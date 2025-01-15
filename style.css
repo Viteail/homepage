@@ -35,7 +35,7 @@ body {
 .profile-block {
   position: relative;
   float: left;
-  min-height: 300px;
+  height: 300px;
 }
 
 .profile {
@@ -57,4 +57,58 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 45px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 180px 120px;
+  height: 300px;
+  width: 320px;
+  border: 1px solid black;
+}
+
+.img-card {
+  background-color: red;
+}
+
+.project-info-block {
+  padding: 10px 18px;
+}
+
+.project-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-txt {
+  font-size: 1.2rem;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  padding: 10px 0px;
+}
+
+.icons-block {
+  display: flex;
+  gap: 15px;
+}
+
+.github-icon,
+.open-in-new-icon {
+  width: 25px;
 }
