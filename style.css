@@ -7,16 +7,18 @@
   margin: 0;
 }
 
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
 html {
   font-family: "Libre Baskerville", serif;
 }
 
 body {
   line-height: 1.5;
-}
-
-.wrapper {
-  min-height: 100vh;
 }
 
 .header-container {
@@ -64,7 +66,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 60px;
+  padding: 80px;
 }
 
 .cards-wrapper {
@@ -109,6 +111,40 @@ body {
 }
 
 .github-icon,
-.open-in-new-icon {
+.open-in-new-icon,
+.phone-outline-icon,
+.email-outline-icon {
   width: 25px;
+}
+
+.github-big-icon,
+.linkedin-big-icon,
+.twitter-big-icon {
+  width: 35px;
+}
+
+.footer-container {
+  padding: 80px;
+  background-color: rgb(135, 255, 255);
+}
+
+.footer-contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.phone-container,
+.email-container {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-media-container {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-media-container > a {
+  height: 35px;
 }
