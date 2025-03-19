@@ -124,6 +124,9 @@ body {
 }
 
 .footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   padding: 80px;
   background-color: rgb(135, 255, 255);
 }
@@ -147,4 +150,8 @@ body {
 
 .footer-media-container > a {
   height: 35px;
+}
+
+.footer-img {
+  width: 700px;
 }
