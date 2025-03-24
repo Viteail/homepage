@@ -23,6 +23,8 @@ body {
 
 :root {
   --white: #ffffff;
+  --95-white: #f2f2f2;
+  --25-white: #404040;
   --black: #000000;
   --dark-maron: #3d0000;
   --maron: #950101;
@@ -91,26 +93,42 @@ body {
   padding: 80px;
 }
 
+.wrapper-projects {
+  max-width: 1060px;
+}
+
 .cards-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 50px;
 }
 
 .card {
   display: grid;
-  grid-template-rows: 180px 120px;
-  height: 300px;
+  grid-template-rows: 2fr 1fr;
+  position: relative;
+  height: 400px;
   width: 320px;
-  border: 1px solid black;
+  color: var(--black);
+  background-color: var(--white);
+  box-shadow: 0px 0px 5px var(--dark-maron);
 }
 
 .img-card {
-  background-color: red;
+  overflow: hidden;
+}
+
+.img-card > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
 }
 
 .project-info-block {
   padding: 10px 18px;
+  background-color: var(--95-white);
 }
 
 .project-block {
@@ -125,6 +143,7 @@ body {
 .project-description {
   font-size: 0.9rem;
   padding: 10px 0px;
+  color: var(--25-white);
 }
 
 .icons-block {
