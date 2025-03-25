@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nixie+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 *,
 *::after,
 *::before {
@@ -14,7 +13,7 @@ body,
 }
 
 html {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -138,6 +137,7 @@ body {
 
 .project-txt {
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .project-description {
@@ -151,17 +151,23 @@ body {
   gap: 15px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .github-icon,
 .open-in-new-icon,
-.phone-outline-icon,
+.phone-icon,
 .email-outline-icon {
   width: 25px;
+  fill: var(--white);
 }
 
 .github-big-icon,
 .linkedin-big-icon,
 .twitter-big-icon {
-  width: 35px;
+  font-size: 2rem;
+  color: var(--white);
 }
 
 .footer-container {
@@ -169,13 +175,14 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 80px;
-  background-color: rgb(135, 255, 255);
+  background-color: var(--black);
 }
 
 .footer-contact-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  color: var(--white);
 }
 
 .phone-container,
@@ -189,10 +196,7 @@ body {
   gap: 25px;
 }
 
-.footer-media-container > a {
-  height: 35px;
-}
-
 .footer-img {
   width: 700px;
+  border-radius: 5px;
 }
