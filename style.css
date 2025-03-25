@@ -185,6 +185,11 @@ a {
   color: var(--white);
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .phone-container,
 .email-container {
   display: flex;
@@ -212,11 +217,11 @@ a {
 }
 
 @media (max-width: 600px) {
-  .footer-contact-container {
+  .footer-contact-container, .contact-info {
     align-items: center;
   }
 
-  .footer-contact-container > p {
+  .footer-contact-container > p, .address > p {
     text-align: center;
   }
 }
