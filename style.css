@@ -81,7 +81,11 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 45px;
+  padding: 3rem;
+}
+
+.about-block > p {
+  word-wrap: break-word;
 }
 
 .main-container {
@@ -223,14 +227,34 @@ a {
   .portfolio-work {
     text-align: center;
   }
+
+  .about-block {
+    display: block;
+  }
+
+  .profile-block {
+    margin: 0 3rem 2rem 0;
+  }
 }
 
 @media (max-width: 600px) {
-  .footer-contact-container, .contact-info {
+  .footer-contact-container,
+  .contact-info {
     align-items: center;
   }
 
-  .footer-contact-container > p, .address > p {
+  .footer-contact-container > p,
+  .address > p {
     text-align: center;
+  }
+
+  .profile-block {
+    margin: 0;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
